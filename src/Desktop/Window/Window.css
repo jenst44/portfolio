@@ -49,5 +49,10 @@
 .Window__TopBar__Title {
     font-weight: 400;
     font-size: 14px
+}
 
+.Window__MainContent {
+    overflow: auto;
+    height: calc(100% - 20px);
+    border-radius: 10px;
 }

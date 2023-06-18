@@ -2,6 +2,16 @@
     {
         "key": "iot_in_action",
         "title": "Microsoft - IoT in Action",
-        "tile": "iot-in-action-header.png"
+        "img": "iot-in-action-header.png"
+    },
+    {
+        "key": "iot_in_action",
+        "title": "Microsoft - IoT in Action",
+        "img": "iot-in-action-header.png"
+    },
+    {
+        "key": "iot_in_action",
+        "title": "Microsoft - IoT in Action",
+        "img": "iot-in-action-header.png"
     }
 ]

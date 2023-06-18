@@ -1,0 +1,28 @@
+.CaseStudy__MainContent {
+    padding: 20px;
+}
+
+.CaseStudies__Header {
+    display: grid;
+    grid-auto-flow: column;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+}
+
+.CaseStudies__Header__Image {
+    height: 200px;
+}
+
+.CaseStudies__Body {
+    background-color: #505050;
+    padding: 20px;
+    color: #fff;
+}
+
+.CaseStudies__Body__Studies {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+}
