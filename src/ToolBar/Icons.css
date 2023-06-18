@@ -1,0 +1,14 @@
+.Icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px
+}
+
+.Icons__Icon {
+    height: 24px;
+}
+
+.Icons__Bluetooth {
+    height: 16px;
+}

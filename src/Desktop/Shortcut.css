@@ -1,0 +1,16 @@
+.ShortCut {
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+}
+
+.ShortCut__Icon {
+    width: 100%;
+}
+
+.ShortCut__Text {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px
+}

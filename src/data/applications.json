@@ -1,0 +1,13 @@
+{
+    "about_me" : {
+        "type": "NotePad",
+        "content": "<p>I grew up on beautiful San Juan Island Washington, you could call me an islaaaand boy. While on the island I worked as a diver and worked towards obtaining my private pilot's liscence while playing several sports. After high school I attended the University of Washington to learn Biology.</p><p>While I loved the science world it wasn't the career I wanted to pursue so I quit my job and went to a accelerated programming course in 2015. I feel in love with programing and got a job at Extreme Arts & Sciences, a small digital agency in Seattle, WA. I learned everything I know there and worked my way up from being a know nothing junior developer to head of development and a part owner. We will see what happens next!</p><p>-Jens</p>"
+    },
+    "about_the_site": {
+        "type": "NotePad",
+        "content": "<p>This site was create by hand from the ground up by Jens Townsdin</p><p>Technologies utilized</p><ul><li>Frontend: React.js</li><li>Backend (for contact form and serving): .Net</li><li>Database: MySQL</li><li>Serving Architecture: Docker on Amazong ECS</li></ul>"
+    },
+    "case_studies": {
+        "type": "CaseStudies"
+    }
+}

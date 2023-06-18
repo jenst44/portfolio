@@ -1,0 +1,53 @@
+.Window {
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    background-color: #fff;
+    z-index: 100;
+    cursor: default;
+    border-radius: 10px;
+}
+
+.Window__TopBar {
+    padding: 5px;
+    background-color: #eee;
+    display: grid;
+    grid-auto-flow: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Window__TopBar__LeftButtons {
+    display: inline-grid;
+    grid-auto-flow: column;
+    gap: 7px;
+    justify-self: start;
+
+}
+
+.Window__TopBar__LeftButtons__Button {
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.Window__TopBar__LeftButtons__Close {
+    background-color: rgb(255, 84, 77);
+}
+
+.Window__TopBar__LeftButtons__Minimize {
+    background-color: rgb(254, 180, 41);
+}
+
+.Window__TopBar__LeftButtons__Expand {
+    background-color: rgb(36, 193, 56);
+}
+
+.Window__TopBar__Title {
+    font-weight: 400;
+    font-size: 14px
+
+}

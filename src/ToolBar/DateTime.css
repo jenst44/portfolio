@@ -1,0 +1,15 @@
+.DateTime { 
+    display: flex;
+    font-weight: 450;
+    height:100%;
+    align-items: center;
+}
+
+.DateTime__Date {
+    padding-right: 10px;
+    flex-shrink: 0;
+}
+
+.DateTime__Time {
+    flex-shrink: 0;
+}
