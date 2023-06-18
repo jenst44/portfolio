@@ -1,7 +1,7 @@
 import {createRef} from 'react'
 import './Window.css';
 import NotePad from './NotePad';
-import CaseStudies from './CaseStudies';
+import CaseStudies from './CaseStudies/CaseStudies';
 
 export const Window = (props) => {
 

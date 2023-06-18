@@ -2,16 +2,17 @@
     {
         "key": "iot_in_action",
         "title": "Microsoft - IoT in Action",
-        "img": "iot-in-action-header.png"
+        "description": "An global in person event conference series hosted by Microsoft for it's partners. Featured in 19 countries, and handling 20,000 + registrations it was a major success for Microsoft and their IoT program.",
+        "date": "2019-2022",
+        "img": "iot-in-action-header.png",
+        "tags": ["Node.js", "Ractive.js", "PHP", "Electron.js"]
     },
     {
         "key": "iot_in_action",
         "title": "Microsoft - IoT in Action",
-        "img": "iot-in-action-header.png"
-    },
-    {
-        "key": "iot_in_action",
-        "title": "Microsoft - IoT in Action",
-        "img": "iot-in-action-header.png"
+        "description": "An global in person event conference series hosted by Microsoft for it's partners. Featured in 19 countries, and handling 20,000 + registrations it was a major success for Microsoft and their IoT program.",
+        "date": "2019-2022",
+        "img": "iot-in-action-header.png",
+        "tags": ["Node.js", "Ractive.js", "PHP", "Electron.js"]
     }
 ]

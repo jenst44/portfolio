@@ -16,9 +16,14 @@
 }
 
 .CaseStudies__Body {
-    background-color: #505050;
     padding: 20px;
-    color: #fff;
+    color: #000;
+}
+
+.CaseStudies__Body__Title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .CaseStudies__Body__Studies {

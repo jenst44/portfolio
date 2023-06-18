@@ -10,9 +10,9 @@ function ToolBar() {
             <div className="ToolBar__Left">
                 <Tab key="phone" display="Info">
                     <ul>
-                        <li>ph: <a href="tel:360-472-0409">+1 (360) 472 0409</a></li>
-                        <li>email: <a href="mailto:jenst44@gmail.com">jenst44@gmail.com</a></li>
-                        <li>location: Seattle, WA</li>
+                        <li>Phone: <a href="tel:360-472-0409">+1 (360) 472 0409</a></li>
+                        <li>Email: <a href="mailto:jenst44@gmail.com">jenst44@gmail.com</a></li>
+                        <li>Location: Seattle, WA</li>
                     </ul>
                 </Tab>
                 <Tab key="email" display="Interests">
