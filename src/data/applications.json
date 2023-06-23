@@ -27,5 +27,14 @@
             "top": "50",
             "left": "15"
         }
+    },
+    "flappy": {
+        "type": "Flappy",
+        "title": "Flappy Cat",
+        "icon": "cat-fly-1.svg",
+        "position": {
+            "top": "50",
+            "left": "70"
+        }
     }
 }

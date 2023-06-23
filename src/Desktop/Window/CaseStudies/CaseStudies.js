@@ -37,7 +37,7 @@ export const CaseStudies = ({app_data}) => {
                 current_case_study && 
                 <div className="CaseStudies__Body">
                     <div className="CaseStudies__Body__Study">
-                        <CaseStudy study_key={current_case_study}></CaseStudy>;
+                        <CaseStudy key={current_case_study} study_key={current_case_study}></CaseStudy>;
                     </div>
                 </div>
             }

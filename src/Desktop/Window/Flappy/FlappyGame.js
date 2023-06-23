@@ -4,13 +4,13 @@ import FlappyGameBG from "./FlappyGameBG";
 
 class FlappyGame{
 
-    constructor() {
-        var elem = document.querySelector('#flappy-game-container');
+    constructor(container) {
+        this.canvas = document.querySelector(container);
         this.config = {
             width: window.innerWidth,   
-            height: elem.offsetHeight
+            height: this.canvas.offsetHeight
         }
-        this.last_time_update;
+        this.last_time_update = null;
         this.state = "start_screen";
         this.current_score = 0;
     
@@ -24,13 +24,13 @@ class FlappyGame{
         this.score_container = document.querySelector('.platformer__info__score__value');
     
     
-        popup_manager.events.listen('how-to__close', function(){
-            this.state = 'playing';
-        }.bind(this));
+        // popup_manager.events.listen('how-to__close', function(){
+        //     this.state = 'playing';
+        // }.bind(this));
     
-        popup_manager.events.listen('how-to__open', function(){
-            this.state = 'paused';
-        }.bind(this));
+        // popup_manager.events.listen('how-to__open', function(){
+        //     this.state = 'paused';
+        // }.bind(this));
     }
 
     start(){
@@ -57,7 +57,6 @@ class FlappyGame{
     create(){
     
         // Setup canvas
-        this.canvas = document.getElementById('flappy-game-container');
         this.canvas.width = this.config.width;
         this.canvas.height = this.config.height;
         this.context = this.canvas.getContext("2d");
@@ -78,18 +77,23 @@ class FlappyGame{
     update(timestamp){
         if(this.isPlaying()){
             if(!this.last_time_update) this.last_time_update = timestamp;
-            const elapsed = timestamp - this.last_time_update;
+            var elapsed = timestamp - this.last_time_update;
+            if(this.detectOverlap()){
+                this.die();
+                elapsed = 0;
+            }
             this.clear();
             this.bg_controller.update(elapsed, timestamp);
             this.pipe_controller.update(elapsed, timestamp);
             this.player_controller.update(elapsed, timestamp);
-    
+            
             this.context.drawImage(
                 this.bg_controller.canvas, 0,0
             )
             this.context.drawImage(
                 this.pipe_controller.canvas, 0,0
             );
+
             this.context.drawImage(
                 this.player_controller.canvas,
                 this.player_controller.current_position.x,
@@ -98,10 +102,7 @@ class FlappyGame{
     
             this.updateScore();
             this.last_time_update = timestamp;
-    
-            if(this.detectOverlap()){
-                this.die();
-            }
+
         } else {
             this.last_time_update = timestamp;
         }
@@ -109,7 +110,7 @@ class FlappyGame{
     }
     
     
-    updateScore(timestamp){
+    updateScore(){
         var p_width = this.pipe_controller.pipe_width;
         var pipes = this.pipe_controller.pipes;
         for(var ii = 0; ii < pipes.length; ii ++){
@@ -128,7 +129,6 @@ class FlappyGame{
     }
     
     die(){
-    
         this.player_controller.set_display_type('die');
         this.show_end();
         this.state = "dead";
@@ -150,9 +150,9 @@ class FlappyGame{
         }
     };
     show_end(){
-        var el = document.querySelector('.platformer__popup .score');
+        var el = document.querySelector('.FlappyDieScreen .score');
         if (el) el.innerHTML = this.current_score;
-        var el = document.querySelector('.platformer__popup .item');
+        var el = document.querySelector('.FlappyDieScreen .item');
         if (el) {
             if (this.current_score == 1 ) {
                 el.innerHTML = 'pipe';
@@ -161,13 +161,13 @@ class FlappyGame{
             }
         }
     
-        document.querySelector('.platformer__popup').style.display = 'flex';
+        document.querySelector('.FlappyDieScreen').style.display = 'grid';
     }
     
     reset(){
         this.player_controller.reset();
         this.pipe_controller.reset();
-        this.start();    
+        this.start();
     };
     
     detectOverlap(){
@@ -308,8 +308,8 @@ class FlappyGame{
         var pixCanvas1 = document.createElement("canvas");
         ctx1 = pixCanvas1.getContext("2d");
         // reduced size rw, rh
-        rw = pixCanvas1.width = Math.max(1,Math.floor(aw/8));
-        rh = pixCanvas1.height = Math.max(1,Math.floor(ah/8));
+        let rw = pixCanvas1.width = Math.max(1,Math.floor(aw/8));
+        let rh = pixCanvas1.height = Math.max(1,Math.floor(ah/8));
         // repeat the following untill the canvas is just 64 pixels
         while(rw > 8 && rh > 8){
             // draw the mask image several times

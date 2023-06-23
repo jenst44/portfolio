@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.CaseStudies__Header__Title {
+    font-size: 40px;
+}
+
 .CaseStudies__Header__Image {
     height: 200px;
 }

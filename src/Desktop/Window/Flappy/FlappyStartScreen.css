@@ -1,0 +1,39 @@
+.FlappyStartScreen {
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.FlappyStartScreen__Header {
+    font-size: 30px
+}
+
+.FlappyStartScreen__Details {
+    padding: 25px
+}
+
+.FlappyStartScreen__Start {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: #fff
+}
+
+.FlappyStartScreen__AboutGame {
+    margin-top:  40px;
+}
+
+.FlappyStartScreen__AboutGame h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}

@@ -9,7 +9,7 @@ class FlappyGameBG{
         }
 
         this.game = game;
-        this.image;
+        this.image = null;
         this.x = 0;
         this.create();
     }

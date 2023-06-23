@@ -1,17 +1,15 @@
 .CaseStudyTile {
     border-bottom: 1px solid rgb(224, 224, 224);
     padding: 20px 20px;
-
 }
 
 .CaseStudyTile__Top {
-    display: flex;
-    margin-bottom: 10px
-    
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    margin-bottom: 10px;
 }
 
 .CaseStudyTile__Top__Title { 
-    width: 80%;
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
@@ -22,7 +20,6 @@
 }
 
 .CaseStudyTile__Top__Date { 
-    width: 20%;
     font-size: 14px;
     text-align: right;
 }
@@ -36,6 +33,7 @@
 
 .CaseStudyTile__Tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -43,6 +41,5 @@
     padding: 5px;
     background-color: #eee;
     color: #000;
-    font-size: 13px;
-    
+    font-size: 13px;   
 }

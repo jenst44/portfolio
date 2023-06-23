@@ -1,6 +1,7 @@
 import {createRef} from 'react'
 import './Window.css';
 import NotePad from './NotePad';
+import Flappy from './Flappy';
 import CaseStudies from './CaseStudies/CaseStudies';
 
 export const Window = (props) => {
@@ -42,6 +43,7 @@ export const Window = (props) => {
             <div className="Window__MainContent">
                 {data.type === "NotePad" && <NotePad app_data={data}></NotePad>}
                 {data.type === "CaseStudies" && <CaseStudies app_data={data}></CaseStudies>}
+                {data.type === "Flappy" && <Flappy app_data={data}></Flappy>}
             </div>
         </div>
     )

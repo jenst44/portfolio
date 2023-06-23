@@ -9,28 +9,36 @@ class FlappyGamePlayer{
                 flying: "/assets/img/flappy/unicat-cat-fly-0.svg"
             },
             */
+            // images : {
+            //     standard : [
+            //         "/assets/img/flappy/unicat-cat-fly-0.svg",
+            //         "/assets/img/flappy/unicat-cat-fly-1.svg",
+            //         "/assets/img/flappy/unicat-cat-fly-2.svg",
+            //         "/assets/img/flappy/unicat-cat-fly-3.svg",
+            //         "/assets/img/flappy/unicat-cat-fly-4.svg",                
+            //         "/assets/img/flappy/unicat-cat-fly-5.svg" ,                
+            //         "/assets/img/flappy/unicat-cat-fly-6.svg" ,                
+            //         "/assets/img/flappy/unicat-cat-fly-7.svg"  ,               
+            //         "/assets/img/flappy/unicat-cat-fly-8.svg"                 
+            //     ],
+            //     die : "/assets/img/flappy/unicat-cat-crash.svg",
+            //     score : "/assets/img/flappy/unicat-cat-wink.svg"
+            // },
             images : {
                 standard : [
-                    "/assets/img/flappy/unicat-cat-fly-0.svg",
-                    "/assets/img/flappy/unicat-cat-fly-1.svg",
-                    "/assets/img/flappy/unicat-cat-fly-2.svg",
-                    "/assets/img/flappy/unicat-cat-fly-3.svg",
-                    "/assets/img/flappy/unicat-cat-fly-4.svg",                
-                    "/assets/img/flappy/unicat-cat-fly-5.svg" ,                
-                    "/assets/img/flappy/unicat-cat-fly-6.svg" ,                
-                    "/assets/img/flappy/unicat-cat-fly-7.svg"  ,               
-                    "/assets/img/flappy/unicat-cat-fly-8.svg"                 
+                    "/assets/img/flappy/cat-fly-1.svg",
+                    "/assets/img/flappy/cat-fly-2.svg",        
                 ],
-                die : "/assets/img/flappy/unicat-cat-crash.svg",
-                score : "/assets/img/flappy/unicat-cat-wink.svg"
+                die : "/assets/img/flappy/cat-fly-1.svg",
+                score : "/assets/img/flappy/cat-fly-1.svg"
             },
             image_frametimer: 50,
             size: {
-                image_ratio: 1,
-                height_percentage: .15
+                image_ratio: .6,
+                height_percentage: .3
             },
             gravity: .0003,
-            jump_speed: -.03,
+            jump_speed: -.028,
             max_speed: .004,
             max_rotation: 4,
             rotation_speed: .01

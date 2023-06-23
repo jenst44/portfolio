@@ -7,11 +7,11 @@ class FlappyGamePipes {
             bottom_image_src : "/assets/img/flappy/pipe-bottom.svg",
             gap_percentage: .4,
             opening_range: .35,
-            pipe_speed: .0001
+            pipe_speed: .00015
         }
 
         this.game = game;
-        this.image;
+        this.image = null;
         this.pipes = [];
         this.current_offset = 0;
 
