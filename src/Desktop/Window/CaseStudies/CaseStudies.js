@@ -13,6 +13,10 @@ export const CaseStudies = ({app_data}) => {
         setCaseStudy(e.target.getAttribute('ref_key'));
     }
 
+    const closeCaseStudy = () => {
+        setCaseStudy(false);
+    }
+
     return(
         <div className="CaseStudies">
             <div className="CaseStudies__Header">
@@ -37,7 +41,7 @@ export const CaseStudies = ({app_data}) => {
                 current_case_study && 
                 <div className="CaseStudies__Body">
                     <div className="CaseStudies__Body__Study">
-                        <CaseStudy key={current_case_study} study_key={current_case_study}></CaseStudy>;
+                        <CaseStudy close_case_study={closeCaseStudy} key={current_case_study} study_key={current_case_study}></CaseStudy>
                     </div>
                 </div>
             }

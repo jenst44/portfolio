@@ -1,21 +1,24 @@
-.CaseStudy__Tile {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr, 2fr;
-    gap: 20px;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 10px;;
-    cursor: pointer;
+.CaseStudy__Back {
+
 }
 
-.CaseStudy__Tile__Title {
-    grid-column: 1;
+.CaseStudy__Back:hover {
+    color: blue;
 }
 
-.CaseStudy__Tile__Image {
-    grid-column: 2/3;
-    width: 100%;
+.CaseStudy__Inner {
+    padding: 20px;
+}
+
+.CaseStudy__Title { 
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.CaseStudy__Description {
+    font-style: italic;
+}
+
+.CaseStudy__MainContent {
+    padding-top: 20px;
 }

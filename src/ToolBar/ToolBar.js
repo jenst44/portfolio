@@ -2,12 +2,14 @@ import './ToolBar.css';
 import DateTime from './DateTime';
 import Icons from './Icons';
 import Tab from './Tab';
+import coder from '../images/coding.svg';
 
 function ToolBar() {
 
     return (
         <div className="ToolBar">
             <div className="ToolBar__Left">
+                <img className="ToolBar__Logo" src={coder} />
                 <Tab key="phone" display="Info">
                     <ul>
                         <li>Phone: <a href="tel:360-472-0409">+1 (360) 472 0409</a></li>
