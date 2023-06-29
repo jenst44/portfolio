@@ -1,8 +1,9 @@
+
 .ShortCut {
     width: 60px;
     cursor: pointer;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    z-index: 10;
 }
 
 .ShortCut__Icon {

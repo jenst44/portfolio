@@ -8,6 +8,7 @@
     z-index: 100;
     cursor: default;
     border-radius: 10px;
+    resize: both;
 }
 
 .Window__TopBar {

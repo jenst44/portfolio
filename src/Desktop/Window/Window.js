@@ -1,7 +1,9 @@
-import {createRef} from 'react'
+import {createRef, useEffect} from 'react'
 import './Window.css';
 import NotePad from './NotePad';
 import Flappy from './Flappy';
+import { gsap } from "gsap";
+import  Draggable from "gsap/Draggable";
 import CaseStudies from './CaseStudies/CaseStudies';
 
 export const Window = (props) => {
@@ -30,8 +32,17 @@ export const Window = (props) => {
         expanded = !expanded;
     }
 
+    useEffect( () => {
+        Draggable.create(`#${props.window_data.key}`, {
+            type: "x,y",
+            zIndexBoost: false,
+            trigger: ".Window__TopBar"
+        });
+        Draggable.zIndex = 2;
+    })
+
     return(
-        <div ref={ref} className="Window">
+        <div key={props.window_data.key} id={props.window_data.key} ref={ref} className="Window">
             <div className="Window__TopBar">
                 <div className="Window__TopBar__LeftButtons">
                     <div onClick={closeWindow} className="Window__TopBar__LeftButtons__Button Window__TopBar__LeftButtons__Close"></div>

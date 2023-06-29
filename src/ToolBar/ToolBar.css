@@ -6,6 +6,8 @@
     grid-auto-flow: column;
     padding: 0 10px;
     font-size: 13px;
+    position: relative;
+    z-index: 99;
 }
 
 .ToolBar__Left {
